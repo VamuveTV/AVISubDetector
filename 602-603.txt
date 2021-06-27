@@ -1,0 +1,131 @@
+Сравнение файлов Unit1.pas и e:\vfw\unit1.pas
+****** Unit1.pas
+    OpenLangFile: TOpenDialog;
+    procedure btAddAVIClick(Sender: TObject);
+****** e:\vfw\unit1.pas
+    OpenLangFile: TOpenDialog;
+    cbFullLineSubPic: TCheckBox;
+    procedure btAddAVIClick(Sender: TObject);
+******
+
+****** Unit1.pas
+    INC (FrameIndex);
+   end;
+****** e:\vfw\unit1.pas
+    INC (FrameIndex);
+    FramePanel.Caption:='Current Frame: '+IntToStr(FrameIndex-IgnorePeakDistance+1)+' / '+IntToStr(MovieLength);
+    Application.ProcessMessages;
+   end;
+******
+
+****** Unit1.pas
+  if (cbAutoSubs.ItemIndex=2) and (s<>'&nbsp;') then exit;
+ end;
+****** e:\vfw\unit1.pas
+  if (cbAutoSubs.ItemIndex=2) and (s<>'&nbsp;') then exit;
+  if (cbAutoSubs.ItemIndex=3) and (s<>'&nbsp;') then s:=s[1];
+ end;
+******
+
+****** Unit1.pas
+ Reg.WriteBool('cbUseCropDimensions',cbUseCropDimensions.Checked);
+ Reg.WriteBool('cbAutoLoadScript',cbAutoLoadScript.Checked);
+****** e:\vfw\unit1.pas
+ Reg.WriteBool('cbUseCropDimensions',cbUseCropDimensions.Checked);
+ Reg.WriteBool('cbFullLineSubPic',cbFullLineSubPic.Checked);
+ Reg.WriteBool('cbAutoLoadScript',cbAutoLoadScript.Checked);
+******
+
+****** Unit1.pas
+  if Reg.ValueExists('cbUseCropDimensions') then cbUseCropDimensions.Checked:=Reg.ReadBool('cbUseCropDimensions');
+  if Reg.ValueExists('cbAutoLoadScript') then  cbAutoLoadScript.Checked:=Reg.ReadBool('cbAutoLoadScript');
+****** e:\vfw\unit1.pas
+  if Reg.ValueExists('cbUseCropDimensions') then cbUseCropDimensions.Checked:=Reg.ReadBool('cbUseCropDimensions');
+  if Reg.ValueExists('cbFullLineSubPic') then cbFullLineSubPic.Checked:=Reg.ReadBool('cbFullLineSubPic');
+
+  if Reg.ValueExists('cbAutoLoadScript') then  cbAutoLoadScript.Checked:=Reg.ReadBool('cbAutoLoadScript');
+******
+
+****** Unit1.pas
+  Ic:=TIcon.Create;
+  Self.Visible:=not(Self.Visible);
+  if Self.Visible then
+  begin
+   Self.BringToFront;
+   Self.SetFocus;
+   Application.Restore;
+****** e:\vfw\unit1.pas
+  Ic:=TIcon.Create;
+  Visible:=not(Visible);
+  if {Self.}Visible then
+  begin
+   {Self.}BringToFront;
+   {Self.}SetFocus;
+   Application.Restore;
+******
+
+****** Unit1.pas
+  Shell_NotifyIcon(NIM_MODIFY,@NI);
+  if (self.Visible) then
+  begin
+****** e:\vfw\unit1.pas
+  Shell_NotifyIcon(NIM_MODIFY,@NI);
+  if ({self.}Visible) then
+  begin
+******
+
+****** Unit1.pas
+  SetLength(BandRects,Length(BandRects)+1);
+  BandRects[Length(BandRects)-1].Left:=max(xx1-margin,1);
+  BandRects[Length(BandRects)-1].Top:=max(yy1-margin,1);
+  BandRects[Length(BandRects)-1].Right:=min(xx2+margin,FrameWidth-2);
+  BandRects[Length(BandRects)-1].Bottom:=min(yy2+margin,FrameHeight-ImageCutBottom-2);
+ end;
+****** e:\vfw\unit1.pas
+  SetLength(BandRects,Length(BandRects)+1);
+  BandRects[Length(BandRects)-1].Top:=max(yy1-margin,1);
+  BandRects[Length(BandRects)-1].Bottom:=min(yy2+margin,FrameHeight-ImageCutBottom-2);
+  if cbFullLineSubPic.Checked then
+  begin
+   BandRects[Length(BandRects)-1].Left:=0;
+   BandRects[Length(BandRects)-1].Right:=FrameWidth;
+  end
+  else
+  begin
+   BandRects[Length(BandRects)-1].Left:=max(xx1-margin,1);
+   BandRects[Length(BandRects)-1].Right:=min(xx2+margin,FrameWidth-2);
+  end;
+ end;
+******
+
+****** Unit1.pas
+   ST_DETECTED_NOW:   begin
+                    if cbAutoSubs.ItemIndex=1 then
+                    AddSubLineTimed(GetFrameTime(FrameIndex),
+****** e:\vfw\unit1.pas
+   ST_DETECTED_NOW:   begin
+                    if (cbAutoSubs.ItemIndex=1) or (cbAutoSubs.ItemIndex=3) then
+                    AddSubLineTimed(GetFrameTime(FrameIndex),
+******
+
+****** Unit1.pas
+                  begin
+                    if cbAutoSubs.ItemIndex=1 then
+                    AddSubLineTimed(GetFrameTime(FrameIndex),
+****** e:\vfw\unit1.pas
+                  begin
+                    if (cbAutoSubs.ItemIndex=1) or (cbAutoSubs.ItemIndex=3) then
+                    AddSubLineTimed(GetFrameTime(FrameIndex),
+******
+
+****** Unit1.pas
+     begin
+      if cbAutoSubs.ItemIndex=1 then
+      AddSubLineTimed(GetFrameTime(FrameIndex),'Empty Frame='+FrameStatToLine(CurrentFrameStats));
+****** e:\vfw\unit1.pas
+     begin
+      if (cbAutoSubs.ItemIndex=1) or (cbAutoSubs.ItemIndex=3) then
+      AddSubLineTimed(GetFrameTime(FrameIndex),'Empty Frame='+FrameStatToLine(CurrentFrameStats));
+******
+
+

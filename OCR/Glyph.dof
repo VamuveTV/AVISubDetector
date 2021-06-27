@@ -1,0 +1,93 @@
+[Compiler]
+A=1
+B=1
+C=1
+D=1
+E=0
+F=0
+G=1
+H=1
+I=1
+J=1
+K=0
+L=1
+M=0
+N=1
+O=1
+P=1
+Q=1
+R=1
+S=0
+T=0
+U=0
+V=0
+W=0
+X=1
+Y=2
+Z=1
+ShowHints=1
+ShowWarnings=1
+UnitAliases=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+
+[Linker]
+MapFile=0
+OutputObjs=0
+ConsoleApp=1
+DebugInfo=0
+RemoteSymbols=0
+MinStackSize=16384
+MaxStackSize=1048576
+ImageBase=4194304
+ExeDescription=
+
+[Directories]
+OutputDir=
+UnitOutputDir=
+PackageDLLOutputDir=
+PackageDCPOutputDir=
+SearchPath=
+Packages=crbide50;PROIDE50;dclaxserver50;dphcrb50;stride50;VCLSMP50;VCLX50;VCL50
+Conditionals=
+DebugSourceDirs=
+UsePackages=0
+
+[Parameters]
+RunParams=
+HostApplication=
+
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Excluded Packages]
+$(DELPHI)\BIN\VCLIDE50.BPL=Integrated Development Environment Specific Components
+$(DELPHI)\Bin\bcb2kaxserver50.bpl=Borland C++Builder COM Server Components Sample Package
+$(DELPHI)\Bin\bcbcxp50.bpl=Borland C++ Builder Code Explorer
+$(DELPHI)\Bin\bcbie50.bpl=Borland C++Builder Internet Explorer 5 Components Package
+$(DELPHI)\Bin\bcbsmp50.bpl=Borland C++ Sample Components
+$(DELPHI)\Bin\dcl31w50.bpl=Delphi 1.0 Compatibility Components
+$(DELPHI)\Bin\dclado50.bpl=Borland ADO DB Components
+$(DELPHI)\BIN\DCLDB50.BPL=Borland Database Components
+$(DELPHI)\Bin\dclbde50.bpl=Borland BDE DB Components
+$(DELPHI)\Bin\dclib50.bpl=InterBase Data Access Components
+$(DELPHI)\Bin\dclie50.bpl=Internet Explorer Components
+$(DELPHI)\Bin\dclisp50.bpl=Borland Internet Solutions Pack Components
+$(DELPHI)\Bin\dclmid50.bpl=Borland MIDAS Components
+$(DELPHI)\Bin\dclocx50.bpl=Borland Sample Imported ActiveX Controls
+$(DELPHI)\Bin\dclsmpedit50.bpl=Borland Editor Script Enhancements
+$(DELPHI)\Bin\direct50.bpl=Borland Direct IDE Package
+$(DELPHI)\Bin\dphide50.bpl=Borland Delphi Core IDE Package
+$(DELPHI)\Bin\mfcwizard.bpl=MFC Wizard
+$(DELPHI)\BIN\DCLITE50.BPL=Borland Integrated Translation Environment
+$(DELPHI)\Bin\applet50.bpl=Borland Control Panel Applet Package
