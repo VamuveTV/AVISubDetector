@@ -1,3 +1,7 @@
+This is a mirror of AVISubDetector source code that is no longer available on the internet.
+
+***
+
 AVISubDetector Version 0.4.9.3 beta
 
 
